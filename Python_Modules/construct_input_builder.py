@@ -136,7 +136,7 @@ if (__name__ == '__main__'):
     xml_builder.add_construct_parameter('verbose runtime', 'true')
 
     agent_nodeset = xml_builder.add_nodeset('agent')
-    for i in range(50):
+    for i in range(1000):
         agent_node = xml_builder.add_node(agent_nodeset, f'agent_{i}')
         xml_builder.add_node_attribute(agent_node, {'can send knowledge':'true', 'can receive knowledge':'true'})
 
